@@ -40,7 +40,6 @@ class BlogListView extends Component {
       });
 
     } else {
-      debugger;
       let values = localStorage.getItem('values') !=="undefined" ? JSON.parse(localStorage.getItem('values')):[];
       let searchValue = localStorage.getItem('searchValue')!=="undefined"  ? localStorage.getItem('searchValue') :'';
 
@@ -74,7 +73,7 @@ class BlogListView extends Component {
       loadedListlength: loadedListlength + 4
     });
   }
-  getfilteredList(searchVal){debugger;
+  getfilteredList(searchVal){
     let {fullblogArrayList} = this.state;
 
     if(searchVal){
@@ -121,7 +120,8 @@ class BlogListView extends Component {
     
       this.setState({
         blogArrayList: sortedBlogList,
-        values
+        values,
+        searchValue:''
       });
     } else{
       this.setState({
