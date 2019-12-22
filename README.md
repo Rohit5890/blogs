@@ -21,11 +21,12 @@ Blogs uses a number of open source packages to work properly:
 
 To run the project...
 
+  - install node
+
 ```sh
-$ npm init react-app my-app
-$ npm i react-router-dom
+$ git clone <repo URL>
+$ npm install
 ```
-Once the setup is ready. copy 'public' and 'src' folder and replace them in currently created folder.
 
 ### Run
 ```sh
